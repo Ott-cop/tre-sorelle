@@ -9,7 +9,7 @@ async fn main() {
             .service(fs::Files::new("/static", Path::new(concat!(env!("CARGO_MANIFEST_DIR"), "/static"))))
             .service(index)
     })
-    .bind("127.0.0.1:3001")
+    .bind("0.0.0.0:3001")
     .unwrap()
     .run()
     .await;
