@@ -5,3 +5,5 @@ COPY ./ ./
 RUN cargo build --release
 
 CMD ["./target/release/tre-sorelle"]
+
+EXPOSE 80
